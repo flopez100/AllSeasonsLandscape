@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Seasons Landscape LLC</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="top-header">
+            <div><p style="color:#fff;"><i class="fa fa-map-marker"></i>Servicing all of D.C., Maryland, & Virginia</p></div>
+            <div><p style="color:#fff;"> <i class="fa fa-phone"></i>Call us to get your free estimate:
+                    <a href="tel:443-536-1971" class="contact-number">(443) 536-1971</a></p>
+            </div>
+            <div><p style="color:#fff;">Connect with Us
+                <a href="https://www.facebook.com/Allseasonlandscape3320" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://instagram.com/allseasonslandscapellc?igshid=MzRlODBiNWFlZA==" target="_blank" class="fa fa-instagram"></a>
+                </p>
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <div class="header">
+            <nav>
+                <img src="images/logo1.PNG" class="logo">
+                <div class="menu" id="toggleButton">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <ul id="nav-list">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button>Get a Quote</button>
+            </nav>
+        </div>
+
+        <div class="content-container">
+            <div class="slideshow">
+                <img src="images/backgroundimage.jpeg">
+                <div class="body-text">
+                    All Seasons Landscape.<br>
+                    &ensp;Landscaping Done Right.<br>
+                    &emsp;All Year-Round.
+                </div>
+            </div>
+            <div class="slideshow">
+                <img src="images/backgroundimage2.jpg">
+                <div class="body-text">
+                    All Seasons Landscape.<br>
+                    &ensp;Landscaping Done Right.<br>
+                    &emsp;Year-Round Service.
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("slideshow");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000);
+            }
+        </script>
+    </body>
+
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const navList = document.getElementById("nav-list");
+
+        toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        })
+    </script>
+</html>
