@@ -157,16 +157,27 @@ nav {
   }
 
   .slideshow {
+    position: relative;
     width: 100%;
   }
 
-  .body-text {
+  /* .body-text {
     position: absolute;
     top: calc(44vh + .1vmin);
     left: calc(28vh + .1vmin);
     color:#fff;
     font-family: 'rockwell';
     font-size:  calc(4vw + .1vmin);
+  } */
+
+  .body-text {
+    color: #fff;
+    position: absolute;
+    font-size: 3rem;
+    top: 5rem;
+    left: 4rem;
+    font-size: 5vw;
+
   }
 
   @media screen and (max-width: 992px) {
@@ -176,10 +187,6 @@ nav {
       text-align: center;
     }
 
-    .body-text {
-      top: calc(75vh + .1vmin);
-      left: calc(25vh + .1vmin);
-    }
   }
 
   @media screen and (max-width: 600px) {
@@ -188,6 +195,11 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    .body-text {
+      left: 15px;
+      font-size: 8vw;
     }
 
     .header {
@@ -240,19 +252,6 @@ nav {
       display: block;
     }
 
-    .body-text {
-      top: calc(250vh + .1vmin);
-      left: calc(7vh + .1vmin);
-      font-size:  calc(5vw + .1vmin);
-    }
-
-    @media only screen and (max-width: 600px) {
-      .body-text {
-        top: calc(115vh + .1vmin);
-        left: calc(4vh + .1vmin);
-        font-size:  calc(6vw + .1vmin);
-      }
-    }
 
   }
 
