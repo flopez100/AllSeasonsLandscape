@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Seasons Landscape LLC</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="top-header">
+            <div><p style="color:#fff;"><i class="fa fa-map-marker"></i>Servicing all of D.C., Maryland, & Virginia</p></div>
+            <div><p style="color:#fff;"> <i class="fa fa-phone"></i>Call us to get your free estimate:
+                    <a href="tel:443-536-1971" class="contact-number">(443) 536-1971</a></p>
+            </div>
+            <div><p style="color:#fff;">Connect with Us
+                <a href="https://www.facebook.com/Allseasonlandscape3320" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://instagram.com/allseasonslandscapellc?igshid=MzRlODBiNWFlZA==" target="_blank" class="fa fa-instagram"></a>
+                </p>
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <div class="header">
+            <nav>
+                <!-- Logo -->
+                <a href="index.html"><img src="images/logo1.PNG" class="logo"></a>
+                <div class="menu" id="toggleButton">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <!-- Navigation Bar -->
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button onClick="window.location.href='contact.html';">Get a Quote</button>
+            </nav>
+        </div>
+
+        <h2 style="text-align:center;">Services</h2>
+        <p id="services-header">
+            There is a reason why we named ourselves <em>All Seasons Landscape</em>.
+            From spring to winter, we are here to help you every step of the way
+        </p> 
+        
+        <div class="services-container">
+            <div>
+                <h3>Lawn Care</h3>
+                <p>
+                    Lawn care is important for several reasons, and it plays a significant role in maintaining 
+                    healthy, attractive, and functional outdoor spaces. Here's how we help you make the most of
+                    your outdoor spaces:
+                    <img src="images/backgroundimage3.jpeg" width="100%" height="100%">
+                    <ul>
+                        <li>Lawn mowing: Regular lawn mowing and trimming to maintain an appropriate grass height.</li>
+                        <li>Edging: Creating clean and defined borders around lawns and walkways. </li>
+                        <li>Fertilization: Applying fertilizers to promote healthy grass growth.</li>
+                        <li>Weed Control: Managing and preventing the growth of weeds in the lawn.</li>
+                        <li>Removing debris: Clearing away leaves, branches, and other debris that has accumulated.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <h3>Tree & Hedge Care</h3>
+                <p>
+                    Tree and hedge care are essential components of landscaping and property maintenance. We conduct this
+                    service with consideration for the specific needs of different tree and shrub species, local climate conditions, 
+                    and the desired aesthetic and functional goals of each customer.
+                    <img src="images/backgroundimage2.jpg" width="100%">
+                    <ul>
+                        <li>Tree and Shrub Pruning: Trimming overgrown branches to promote health and shape.</li>
+                        <li>Hedge Trimming: Shaping and maintaining hedges for a neat appearance.</li>
+                        <li>Planting: Adding new trees, shrubs, flowers, and other plants to the landscape.</li>
+                        <li>Mulching: Applying mulch to flower beds and around trees to conserve moisture and deter weeds.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <h3>Power Washing</h3>
+                <p>
+                    Power Washing 
+                    <img src="images/backgroundimage3.jpeg" width="100%" height="100%">
+                    <ul>
+                        <li>House Power Washing: Cleaning the exterior of houses, including siding, brick, stucco, and more to 
+                            remove dirt, grime, mold, and mildew.</li>
+                        <li>Deck and Patio Power Washing: Cleaning wooden or composite decks, patios, and outdoor furniture to 
+                            remove stains, algae, and other contaminants.</li>
+                        <li>Driveway Power Washing: Cleaning concrete, asphalt, or gravel driveways to remove oil stains, dirt, and grime.</li>
+                        <li>Sidewalk and Walkway Power Washing: Cleaning concrete or stone sidewalks and walkways to remove dirt, moss, algae, and other debris.</li>
+                        <li>Fence Power Washing: Cleaning wooden, vinyl, or metal fences to remove dirt, mold, mildew, and stains.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <h3>Snow Removal</h3>
+                <p>
+                    Snow Removal
+                    <img src="images/backgroundimage3.jpeg" width="100%" height="100%">
+                    <ul>
+                        <li>Snow Removal: Snow plowing, shoveling, and snow blowing services to clear driveways, walkways, parking lots, and other outdoor areas.</li>
+                        <li>Deicing and Salting: Applying ice melt or salt to prevent ice buildup on pathways, driveways, and stairs is crucial for safety.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const navList = document.getElementById("nav-list");
+
+        toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        })
+    </script>
+</html>

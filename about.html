@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Seasons Landscape LLC</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="top-header">
+            <div><p style="color:#fff;"><i class="fa fa-map-marker"></i>Servicing all of D.C., Maryland, & Virginia</p></div>
+            <div><p style="color:#fff;"> <i class="fa fa-phone"></i>Call us to get your free estimate:
+                    <a href="tel:443-536-1971" class="contact-number">(443) 536-1971</a></p>
+            </div>
+            <div><p style="color:#fff;">Connect with Us
+                <a href="https://www.facebook.com/Allseasonlandscape3320" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://instagram.com/allseasonslandscapellc?igshid=MzRlODBiNWFlZA==" target="_blank" class="fa fa-instagram"></a>
+                </p>
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <div class="header">
+            <nav>
+                <!-- Logo -->
+                <a href="index.html"><img src="images/logo1.PNG" class="logo"></a>
+                <div class="menu" id="toggleButton">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <!-- Navigation Bar -->
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button onClick="window.location.href='contact.html';">Get a Quote</button>
+            </nav>
+        </div>
+
+        <div class="about-container">
+            <div>
+                <h2>Our Story</h2>
+                <p>
+                    All Seasons Landscape is a dedicated family-owned landscaping business that has been serving 
+                    the DMV community with passion and expertise for over [X] years. What started as a humble venture
+                    has blossomed into a thriving business that continues to be driven by our core values of integrity 
+                    and reliability. Our commitment to quality, personalized service, and year-round options set us apart
+                    as your premier choice for all your landscaping needs. 
+                </p>
+                <img src="images/backgroundimage3.jpeg" width="600" height="450">
+            </div>
+            <div>
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>
+                        <b>Family-Centric Approach:</b> At All Seasons Landscape, we treat every client like family. Your lawn is an
+                        extension of your home, and we understand the importance of maintaining its beauty and health. Our 
+                        personalized approach ensures that your unique preferences and needs are always taken into consideration.
+                    </li>
+                    <li>
+                        <b>Expertise:</b> With year's of hands-on experience and a team of knowledgeable experts, we're able to
+                        tailor our services to suit your landscape's specific requirements.
+                    </li>
+                    <li>
+                        <b>Attention to Detail:</b> We believe that the difference lies in the details. Our meticulous care and 
+                        precision in every task, whether it's mowing, trimming, or clearing debris, ensure that your home's landscape 
+                        remains an immaculate masterpiece.
+                    </li>
+                    <li>
+                        <b>Reliability:</b> When you choose All Seasons Landscape, you're choosing reliability. We arrive on time,
+                        deliver consistent results, and communicate transparently every step of the way. Your satisfaction is our top
+                        priority.
+                    </li>
+                </ul>
+                <img src="images/backgroundimage3.jpeg" width="600" height="450">
+            </div>
+            <div id="about-services">
+                <h2>Services We Offer</h2>
+                <ul>
+                    <li>Lawn mowing and edging</li>
+                    <li>Tree and shurb care</li>
+                    <li>Seasonal clean-ups</li>
+                    <li>Landscape design and installation</li>
+                    <li>Powerwash cleanings</li>
+                    <li>Snow removal</li>
+                    <li>And much more!</li>
+                </ul>
+                <img src="images/backgroundimage3.jpeg" width="600" height="450"> 
+
+                <h2 style="padding-top: 2%; color:#fff">Contact Us For Your Free Estimate</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3-SSHG6yLvMW9nyzVjk4_L1pA7rRjV-lF08WF-KYMtdZzJA/viewform?embedded=true" 
+                width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const navList = document.getElementById("nav-list");
+
+        toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        })
+    </script>
+</html>

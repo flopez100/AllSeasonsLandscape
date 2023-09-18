@@ -22,21 +22,23 @@
     <body>
         <div class="header">
             <nav>
+                <!-- Logo -->
                 <a href="index.html"><img src="images/logo1.PNG" class="logo"></a>
                 <div class="menu" id="toggleButton">
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
                 </div>
+                <!-- Navigation Bar -->
                 <ul id="nav-list">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button onClick="window.location.href='contact.html';">Get a Quote</button>
             </nav>
         </div>
-
+        <!-- Body Slideshow -->
         <div class="content-container">
             <div class="slideshow">
                 <img src="images/backgroundimage.jpeg">
@@ -55,9 +57,19 @@
                 </div>
             </div>
 
+            <div class="slideshow">
+                <img src="images/backgroundimage3.jpeg">
+                <div class="body-text">
+                    All Seasons Landscape.<br>
+                    &ensp;Landscaping Done Right.<br>
+                    &emsp;Year-Round Service.
+                </div>
+            </div>
+
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
