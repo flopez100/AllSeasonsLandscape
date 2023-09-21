@@ -247,12 +247,12 @@ button[type="submit"] {
   color: rgb(34, 131, 54);
 }
 
-#about-services {
-  text-align: center;
+.about-container div > iframe {
+  width: 100%;
 }
 
-#about-services > iframe {
-  width: 100%;
+#about-services {
+  text-align: center;
 }
 
 /* Services Page */
