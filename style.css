@@ -251,6 +251,10 @@ button[type="submit"] {
   text-align: center;
 }
 
+#about-services > iframe {
+  width: 100%;
+}
+
 /* Services Page */
 .services-container {
   display: flex;
@@ -283,23 +287,19 @@ button[type="submit"] {
 }
 
 .services-container > div img {
+  width: 100%;
   border-radius: 5%;
 }
 
-.services-container p {
-  font-size: 20px;
-  font-family: 'Tahoma', sans-serif;
+.services-container div > p, li {
+  font-size: 1.3rem;
   font-family: 'Trebuchet MS', sans-serif;
-}
-
-.services-container > div li {
-  font-size: 19px;
 }
 
 #services-header {
   text-align: center; 
   padding-top: 1%;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -320,6 +320,7 @@ button[type="submit"] {
 
   .about-container > div img {
     width: 100%;
+    border-radius: 5%;
   }
 
   .services-container {
@@ -403,21 +404,17 @@ button[type="submit"] {
     display: block;
   }
 
-  .about-container > p, li, h2, b {
-    font-size: 5.5vw;
+  .about-container div > p, h2, li, b {
+    font-size: 5.6vw;
   }
 
-  .about-container > img {
+  .about-container div > img {
     width: 100%;
     height: 80%;
   }
 
-  .services-container p {
-    font-size: 16px;
-  }
-  
-  .services-container > div li {
-    font-size: 15px;
+  .services-container div > p, h3, li {
+    font-size: 5.6vw;
   }
 
   .services-container > div {
@@ -425,6 +422,6 @@ button[type="submit"] {
   }
 
   #services-header {
-    font-size: 18px;
+    font-size: 5.9vw;
   }
 }
