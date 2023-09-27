@@ -37,22 +37,24 @@
                 <button onClick="window.location.href='contact.html';">Get a Quote</button>
             </nav>
         </div>
-
-        <div class="contact-form">
-            <form action="https://formsubmit.co/norayira@mailgolem.com" method="POST">
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display: none;">
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- Success Page -->
-                <input type="hidden" name="_next" value="https://flopez100.github.io/AllSeasonsLandscape/success.html">
-                <h3>Contact Us</h3>
-                <input type="text" name="Name" id="name" placeholder="Name*" required>
-                <input type="text" name="Phone&nbsp;Number" id="phone" placeholder="Phone Number*" required>
-                <input type="email" name ="Email" id="email" placeholder="Email Address">
-                <textarea id="message" name="Message" rows="4" placeholder="How can we help you?"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+        
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="https://formsubmit.co/norayira@mailgolem.com" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Success Page -->
+                    <input type="hidden" name="_next" value="https://flopez100.github.io/AllSeasonsLandscape/success.html">
+                    <h3>Contact Us</h3>
+                    <input type="text" name="Name" id="name" placeholder="Name*" required>
+                    <input type="text" name="Phone&nbsp;Number" id="phone" placeholder="Phone Number*" required>
+                    <input type="email" name ="Email" id="email" placeholder="Email Address">
+                    <textarea id="message" name="Message" rows="4" placeholder="How can we help you?"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         
         <script>

@@ -176,14 +176,20 @@ nav {
   }
 
 /* Contact Page */
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3%;
+  padding-bottom: 10%;
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(34, 131, 54));
+}
+
 .contact-form {
   width: 100%;
-  background-image: linear-gradient(rgb(255, 255, 255),rgb(34, 131, 54));
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 12%;
 }
 
 form {
