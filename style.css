@@ -247,6 +247,7 @@ form button {
   box-sizing: border-box;
   border-radius: 25px;
   border: 2px solid rgb(34, 131, 54);
+  background-color: #f9f9f9;
   padding: 1%;
 }
 
@@ -269,10 +270,6 @@ form button {
   color: rgb(34, 131, 54);
 }
 
-.about-container div > iframe {
-  width: 100%;
-}
-
 #about-services {
   text-align: center;
 }
@@ -293,6 +290,7 @@ form button {
   padding: 2%;
   border-radius: 25px;
   border: 2px solid rgb(34, 131, 54);
+  background-color: #f9f9f9;
 }
 
 .services-container > div:hover {
